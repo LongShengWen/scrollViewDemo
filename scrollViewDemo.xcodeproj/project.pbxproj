@@ -15,6 +15,8 @@
 		8FE3A14020E08A0D0040ABAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3A13F20E08A0D0040ABAD /* main.m */; };
 		8FE3A14A20E08A0D0040ABAD /* scrollViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3A14920E08A0D0040ABAD /* scrollViewDemoTests.m */; };
 		8FE3A15520E08A0D0040ABAD /* scrollViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3A15420E08A0D0040ABAD /* scrollViewDemoUITests.m */; };
+		8FE3A16420E08FED0040ABAD /* swScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE3A16320E08FED0040ABAD /* swScrollViewController.m */; };
+		CBB5720C4EDA68F27158FD75 /* libPods-scrollViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43568BA21D3DF5714CDFB5BE /* libPods-scrollViewDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2196F377D771D78648FF7BAA /* Pods-scrollViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scrollViewDemo/Pods-scrollViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		43568BA21D3DF5714CDFB5BE /* libPods-scrollViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scrollViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE3A12D20E08A0D0040ABAD /* scrollViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scrollViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE3A13020E08A0D0040ABAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8FE3A13120E08A0D0040ABAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		8FE3A15020E08A0D0040ABAD /* scrollViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scrollViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FE3A15420E08A0D0040ABAD /* scrollViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = scrollViewDemoUITests.m; sourceTree = "<group>"; };
 		8FE3A15620E08A0D0040ABAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FE3A16220E08FED0040ABAD /* swScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swScrollViewController.h; sourceTree = "<group>"; };
+		8FE3A16320E08FED0040ABAD /* swScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = swScrollViewController.m; sourceTree = "<group>"; };
+		A3C9F8091A01FF3964D655DE /* Pods-scrollViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scrollViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-scrollViewDemo/Pods-scrollViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBB5720C4EDA68F27158FD75 /* libPods-scrollViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B8982AD4938F9C05D7EC015 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2196F377D771D78648FF7BAA /* Pods-scrollViewDemo.debug.xcconfig */,
+				A3C9F8091A01FF3964D655DE /* Pods-scrollViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		83892BDEE78CF1AE366D0F76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43568BA21D3DF5714CDFB5BE /* libPods-scrollViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FE3A12420E08A0C0040ABAD = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				8FE3A14820E08A0D0040ABAD /* scrollViewDemoTests */,
 				8FE3A15320E08A0D0040ABAD /* scrollViewDemoUITests */,
 				8FE3A12E20E08A0D0040ABAD /* Products */,
+				3B8982AD4938F9C05D7EC015 /* Pods */,
+				83892BDEE78CF1AE366D0F76 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +137,8 @@
 				8FE3A13B20E08A0D0040ABAD /* LaunchScreen.storyboard */,
 				8FE3A13E20E08A0D0040ABAD /* Info.plist */,
 				8FE3A13F20E08A0D0040ABAD /* main.m */,
+				8FE3A16220E08FED0040ABAD /* swScrollViewController.h */,
+				8FE3A16320E08FED0040ABAD /* swScrollViewController.m */,
 			);
 			path = scrollViewDemo;
 			sourceTree = "<group>";
@@ -139,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FE3A15920E08A0D0040ABAD /* Build configuration list for PBXNativeTarget "scrollViewDemo" */;
 			buildPhases = (
+				C8D9861988C870EB875F1F43 /* [CP] Check Pods Manifest.lock */,
 				8FE3A12920E08A0D0040ABAD /* Sources */,
 				8FE3A12A20E08A0D0040ABAD /* Frameworks */,
 				8FE3A12B20E08A0D0040ABAD /* Resources */,
+				C7B60A8A6491B0DD7CE43998 /* [CP] Embed Pods Frameworks */,
+				936E5478E77733F627155C2A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,8 +226,9 @@
 		8FE3A12520E08A0C0040ABAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = sw;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = sw;
+				ORGANIZATIONNAME = lsw;
 				TargetAttributes = {
 					8FE3A12C20E08A0D0040ABAD = {
 						CreatedOnToolsVersion = 9.2;
@@ -260,6 +293,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		936E5478E77733F627155C2A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scrollViewDemo/Pods-scrollViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7B60A8A6491B0DD7CE43998 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-scrollViewDemo/Pods-scrollViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8D9861988C870EB875F1F43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scrollViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8FE3A12920E08A0D0040ABAD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,6 +352,7 @@
 				8FE3A13520E08A0D0040ABAD /* ViewController.m in Sources */,
 				8FE3A14020E08A0D0040ABAD /* main.m in Sources */,
 				8FE3A13220E08A0D0040ABAD /* AppDelegate.m in Sources */,
+				8FE3A16420E08FED0040ABAD /* swScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,27 +513,31 @@
 		};
 		8FE3A15A20E08A0D0040ABAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2196F377D771D78648FF7BAA /* Pods-scrollViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = scrollViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.scrollViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		8FE3A15B20E08A0D0040ABAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3C9F8091A01FF3964D655DE /* Pods-scrollViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = scrollViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.scrollViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
